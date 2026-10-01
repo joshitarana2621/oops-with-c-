@@ -1,0 +1,19 @@
+====limitations of procedural languages====
+1.when we want to store large data it get hard to understand
+2.if new data add,we need to modify everything[functions]
+3.global data accessable for all
+4.no clear boundaries and well definations
+5. hard to maintain when complexity grows
+
+=====what is oops======
+1.used to solve real life problem,style of writting code
+2.divide program into objects that can communicate
+3.objects have their own attributes and properties
+4.idea to combine data and behavior
+5.objects can be reused and it also uses data encapsulation
+
+class :-> interface of class like blueprint [interface]
+object :->instance of class it exsits and stores the value
+
+constructer :-> it is automatically called when object is created [same name as class]
+destructer :-> it is to deleted after it gets out of scope that for memory managment
