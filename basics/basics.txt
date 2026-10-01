@@ -17,3 +17,8 @@ object :->instance of class it exsits and stores the value
 
 constructer :-> it is automatically called when object is created [same name as class]
 destructer :-> it is to deleted after it gets out of scope that for memory managment
+
+constructer :-> it is automatically called when object is created [same name as class]
+destructer :-> it is to deleted after it gets out of scope that for memory managment
+copy construcuter :-> containes same attributes and methods
+oops has their own default constructer and destructer is automatically called
