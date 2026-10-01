@@ -1,0 +1,17 @@
+1.definations -> it binds data and methods together in  a class ,like capsule.
+                also knows as data hiding 
+            
+
+2.functions  ->provide secure layer and hide internal implementation and data in a class,and 
+               only expose neccsary information to external world
+
+3. prevents unauthorized access and modification of data in class by objects
+4. the underlying algorithems of one class need not to be known by other class and 2 class can communicate though
+
+there are access modifiers that provides data secure layer or data hiding 
+1.[public]    :-> accessable all over program
+2.[private]   :->only accessable within the class ,not even it's child class
+3.[protected] :->only withing class and it's child class
+
+perfect encapsulation :-> 1.if all data members are private 
+                          2.implementation of public methods like getter and setter for external communication
