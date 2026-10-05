@@ -1,0 +1,45 @@
+Problem Statement:
+Create a C++ class called BankAccount to represent a customer's bank account.
+The account should store the following information as private data members:
+Account holder's name
+Account number
+Balance
+Because these details should not be directly accessible from outside the class, create public methods to control access.
+Your class should have:
+A method to set all account details at once.
+A method to deposit money into the account.
+A method to withdraw money from the account.
+A method to display the account details.
+Rules:
+The balance should increase when money is deposited.
+Money can be withdrawn only if the withdrawal amount is less than or equal to the balance.
+If the balance is insufficient, display: "Insufficient balance"
+
+=======================understanding of problem=========================================
+first we need to create one class name BankAccount then it contains 4 private data members account holder's name,
+account number,and balance 
+then we have total 4 method one default method to give default value to all account 
+second for deposit Money,third for withdraw and forth for display account
+
+=======================pseudocode========================================================
+create class BankAccount
+ decalre name,account number,balance as private
+  create setData()
+   take name,account number and balance store the values
+  create deposit()
+   take deposit amount
+   add amount to balance
+  create withdraw()
+   take withdrawal ammount
+    IF amount<=balance
+     balance - amount
+    ElSE
+     display "insufficient amount";
+  create display()
+   display name,account number,and balance
+create object of BankAccount
+ set account details
+ deposit amount money
+ withdraw money
+ display account details
+      
