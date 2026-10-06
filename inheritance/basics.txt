@@ -1,0 +1,90 @@
+================= what =============================
+inhertance is basically creating class from exsiting class
+here child inherit(get) some attributes and methods form it's parent class
+child class is more specified then it's parent class
+================ when use ==========================
+
+Suppose we have:
+Animal
+ ├── Dog
+ ├── Cat
+ └── Lion
+All animals may have common functions like:
+eat()
+sleep()
+breathe()
+Instead of writing these functions separately in every class, we can create one Animal class and inherit it.
+This provides code reusability
+
+============ Types of relationship =================
+1. IS-A Relationship:->Inheritance represents an IS-A relationship.
+
+Examples:
+Dog IS-A Animal
+Car IS-A Vehicle
+Student IS-A Person
+Manager IS-A Employee
+
+Example:
+class Animal
+{
+};
+class Dog : public Animal
+{
+};
+Here:
+Dog IS-A Animal
+
+2. HAS-A Relationship:->Composition represents a HAS-A relationship.
+
+Example:
+Car HAS-A Engine
+Student HAS-A Address
+Computer HAS-A Keyboard
+Inheritance and composition should not be confused.
+IS-A
+Dog IS-A Animal
+HAS-A
+Car HAS-A Engine
+
+====================== mode of inheritance =========
+
+1. protected:->members are only accessable within class and Derived[child] class
+2. private  :->members are only accessable within class
+3. public   :->members are accessable in every class
+
+Base Member	 Public Inheritance      Protected Inheritance	 Private Inheritance
+Public	     Public                  Protected	             Private
+Protected	 Protected	             Protected	             Private
+Private	     Not Directly Accessible Not Directly Accessible Not directly accessible
+
+=============== types of inheritance ==============
+ Types of Inheritance
+
+1. Single Inheritance     :->When one derived class inherits from one base class, it is called Single Inheritance.[A → B]
+2. Multilevel Inheritance :->When a class inherits from another derived class, forming a chain of inheritance.[A → B → C]
+3. Multiple Inheritance   :->When one derived class inherits from more than one base class, it is called Multiple Inheritance.[A + B → C]
+4. Hierarchical Inheritance:->When multiple derived classes inherit from the same base class, it is called Hierarchical Inheritance.[A → B, C]
+5. Hybrid Inheritance     :->A combination of two or more types of inheritance is called Hybrid Inheritance.[Combination]
+
+Single       → One parent → One child
+Multilevel   → Parent → Child → Grandchild
+Multiple     → Multiple parents → One child
+Hierarchical → One parent → Multiple children
+Hybrid       → Combination of inheritance types
+
+============ Basic Syntax ==========================
+class Parent
+{
+    // properties and functions
+};
+
+class Child : public[mode] Parent 
+{
+    // additional properties and functions
+};
+
+Here:
+Parent → Base / Parent class
+Child → Derived / Child class
+public → Mode of inheritance
